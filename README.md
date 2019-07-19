@@ -35,7 +35,7 @@ but you are welcome to report the issues of the preliminary version
 of this data.
 <br>
 You are allowed to use this dataset for research purposes only.
-<br>
+<br><br>
 Kindly cite our paper if you find this dataset useful.
 
 @inproceedings{alhindi2018your,<br>
