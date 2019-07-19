@@ -24,7 +24,7 @@ Below is the description of the TSV file taken as is from the original [LIAR dat
 - **Column 15: the extracted justification**
 
 Our justification extraction method is done as follows:
-- Get all sentences in the 'Our Ruling' section of the report if it exist or get the last five sentences
+- Get all sentences in the 'Our Ruling' section of the report if it exists or get the last five sentences.
 - Remove any sentences that have the verdict and any verdict-related words. Verdict-related words are provided in the forbidden words file.
 
 **Please Note:**<br>
