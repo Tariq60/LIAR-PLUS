@@ -26,8 +26,9 @@ Below is the description of the TSV file taken as is from the original [LIAR dat
 Our justification extraction method is done as follows:
 - Get all sentences in the 'Our Ruling' section of the report if it exist or get the last five sentences
 - Remove any sentences that have the verdict and any verdict-related words. Verdict-related words are provided in the forbidden words file.
-<br><br>
-**Please Note:** The dataset in this commit is the second version which was updates after publishing the paper. We increased the list of forbidden words in the second version after realizing that we have missed a few in v1. To find the results of our experiments on v2 of the dataset, please refer to the [poster](http://www.cs.columbia.edu/~tariq/slides/Poster_where_is_your_evidence.pdf). To find the results on v1 of the dataset, please refer to the [paper](http://aclweb.org/anthology/W18-5513). V1 of the dataset can be found in this [commit](https://github.com/Tariq60/LIAR-PLUS/tree/42d9791cee78f275a9f865387b958f4f29049241)
+
+**Please Note:**<br>
+The dataset in this commit is the second version which was updates after publishing the paper. We increased the list of forbidden words in the second version after realizing that we have missed a few in v1. To find the results of our experiments on v2 of the dataset, please refer to the [poster](http://www.cs.columbia.edu/~tariq/slides/Poster_where_is_your_evidence.pdf). To find the results on v1 of the dataset, please refer to the [paper](http://aclweb.org/anthology/W18-5513). V1 of the dataset can be found in this [commit](https://github.com/Tariq60/LIAR-PLUS/tree/42d9791cee78f275a9f865387b958f4f29049241)
 <br><br>
 Note that we do not provide the full-text verdict report in this current version of the dataset,
 but you can use the following command to access the full verdict report and links to the source documents:
