@@ -4,7 +4,7 @@ The extended LIAR dataset for fact-checking and fake news detection released in 
 <br><br>
 This dataset has evidence sentences extracted automatically from the full-text verdict report written by the journalist in Politifact in order to provide a benchmark for evidence retrieval and show empirically that including evidence information in any automatic fake news detection methods results in superior performance to any method lacking such information.
 <br><br>
-Below is the description of the TSV file taken as is from the original [LIAR dataset](https://www.cs.ucsb.edu/~william/data/liar_dataset.zip). We added an new column at the end that include the extracted justification.
+Below is the description of the TSV file taken as is from the original [LIAR dataset](https://www.cs.ucsb.edu/~william/data/liar_dataset.zip), which was published in this [paper](https://www.aclweb.org/anthology/P17-2067). We added an new column at the end that includes the extracted justification.
 <br>
 - Column 1: the ID of the statement ([ID].json).
 - Column 2: the label.
