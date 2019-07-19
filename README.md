@@ -2,7 +2,7 @@
 The extended LIAR dataset for fact-checking and fake news detection released in our paper:
 [Where is Your Evidence: Improving Fact-Checking by Justification Modeling. Tariq Alhindi, Savvas Petridis and Smaranda Muresan](http://aclweb.org/anthology/W18-5513). In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) Brussels, Belgium November 1st, 2018.
 <br><br>
-This dataset has evidence sentences extracted automatically from the fact-checking articles written by the journalist in Politifact in order to provide a benchmark for evidence retrieval and show empirically that including evidence information in any automatic fake news detection methods results in superior performance to any method lacking such information.
+This dataset has evidence sentences extracted automatically from the full-text verdict report written by the journalist in Politifact in order to provide a benchmark for evidence retrieval and show empirically that including evidence information in any automatic fake news detection methods results in superior performance to any method lacking such information.
 <br><br>
 Below is the description of the TSV file taken as is from the original [LIAR dataset](https://www.cs.ucsb.edu/~william/data/liar_dataset.zip). We added an new column at the end that include the extracted justification.
 <br>
@@ -23,6 +23,12 @@ Below is the description of the TSV file taken as is from the original [LIAR dat
 - Column 14: the context (venue / location of the speech or statement).
 - **Column 15: the extracted justification**
 <br>
+Our justification extraction method is done as follows:
+- Get all sentences in the 'Our Ruling' section of the report if it exist or get the last five sentences
+- Remove any sentences that have the verdict and any verdict-related words. Verdict-related words are provided in the forbidden words file.
+<br><br>
+**Please Note:** The dataset in this commit is the second version which was updates after publishing the paper. We increased the list of forbidden words in the second version after realizing that we have missed a few in v1. To find the results of our experiments on v2 of the dataset, please refer to the [poster](http://www.cs.columbia.edu/~tariq/slides/Poster_where_is_your_evidence.pdf). To find the results on v1 of the dataset, please refer to the paper. V1 of the dataset can be found in this [commit](https://github.com/Tariq60/LIAR-PLUS/tree/42d9791cee78f275a9f865387b958f4f29049241)
+<br><br>
 Note that we do not provide the full-text verdict report in this current version of the dataset,
 but you can use the following command to access the full verdict report and links to the source documents:
 wget http://www.politifact.com//api/v/2/statement/[ID]/?format=json
@@ -45,3 +51,5 @@ Kindly cite our paper if you find this dataset useful.
   pages={85--90},<br>
   year={2018}<br>
 }
+
+v2.0 10/24/2018
