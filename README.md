@@ -32,10 +32,11 @@ The dataset in the current commit is the second version which was updated after 
 <br><br>
 Note that we do not provide the full-text verdict report in this current version of the dataset,
 but you can use the following command to access the full verdict report and links to the source documents:<br>
+```
 wget http://www.politifact.com//api/v/2/statement/[ID]/?format=json
-<br><br>
-The original sources retain the copyright of the data.
+```
 <br>
+The original sources retain the copyright of the data.
 Note that there are absolutely no guarantees with this data,
 and we provide this dataset "as is",
 but you are welcome to report the issues of the preliminary version
